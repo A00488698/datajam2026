@@ -129,8 +129,8 @@ export default function Home() {
 
           <h3>Our Solution</h3>
           <p className="lead" style={{ fontSize: 15 }}>
-            Expand a mobile harm reduction unit (like MOSH in Halifax) beyond Central and deploy next in Northern and
-            Eastern—guided by a gap score that quantifies unmet need.
+            Expand a mobile harm reduction unit (like MOSH in Halifax) beyond Central—guided by a gap score framework
+            that quantifies unmet need and supports data-driven deployment planning.
           </p>
 
           <div className="callout" style={{ marginTop: 12 }}>

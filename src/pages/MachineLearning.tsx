@@ -304,29 +304,40 @@ export default function MachineLearning() {
 
           <h2 id="planning">7. How Model Results Support Intervention Planning</h2>
           <p>
-            Forecasting tells us where burden is likely to remain high. We then pair those insights with service location
-            coverage to support decisions on where to deploy interventions next.
+            Forecasting is used here as a <b>planning tool</b>: it helps teams think proactively about where future burden
+            may rise or remain high, and it supports scenario discussions alongside service coverage and operational
+            constraints.
           </p>
+
           <div className="callout">
-            <b>Intervention idea:</b> expand a mobile harm reduction unit (like MOSH in Halifax) beyond Central, prioritizing
-            Northern and Eastern zones where the gap score is highest.
+            <b>How to use it (without over-claiming):</b> combine forecasts with service location coverage and domain input
+            to decide where to deploy interventions next. The model is one input to decision-making—not the decision
+            itself.
           </div>
+
+          <p><b>Intervention concept (example):</b></p>
+          <ul>
+            <li>
+              Expand a mobile harm reduction unit (like MOSH in Halifax) beyond Central and use updated data to refine
+              routes and deployment targets.
+            </li>
+          </ul>
+
           <p><b>Scalability roadmap:</b></p>
           <ol>
             <li>
-              <b>Phase 1:</b> bring mobile services to Northern and Eastern zones where resources are most needed.
+              <b>Phase 1:</b> pilot expansion to additional zones and communities.
             </li>
             <li>
-              <b>Phase 2:</b> track utilization (needles provided, tests administered, patients reached) for route planning
-              and optimization.
+              <b>Phase 2:</b> track utilization (needles provided, tests administered, patients reached) to optimize routing.
             </li>
             <li>
               <b>Phase 3:</b> invest in additional mobile units backed by updated data and measured impact.
             </li>
           </ol>
           <p>
-            Evaluation can be embedded from launch using an interrupted time series design, tracking outcomes monthly via
-            a real-time dashboard.
+            Evaluation can be embedded from launch (e.g., interrupted time series), tracking outcomes monthly via a
+            real-time dashboard.
           </p>
 
           <div className="divider" />

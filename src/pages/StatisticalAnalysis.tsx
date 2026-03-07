@@ -155,11 +155,14 @@ export default function StatisticalAnalysis() {
 
           <h2 id="sec-1-6">6. Key takeaways</h2>
           <ul>
-            <li>Central is relatively well-served (gap score tends negative).</li>
-            <li>Northern and Eastern are underserved (gap score positive).</li>
+            <li>Burden is persistent and geographically uneven across zones.</li>
             <li>
-              A mobile harm reduction unit already operates in Central; the data indicates it should expand to Northern and
-              Eastern next.
+              Service availability is not evenly distributed; needle exchange coverage is especially limited outside
+              Central.
+            </li>
+            <li>
+              The gap score framework provides a transparent way to discuss where expansion (e.g., mobile services) could
+              have high impact—alongside operational and community context.
             </li>
           </ul>
 
