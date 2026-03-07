@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import problemMap from '../assets/problem-analysis-figure.jpg';
 import powerbiDashboard from '../assets/problem-analysis-figure-2.jpg';
-// (solution slide removed)
 
 function scrollToId(id: string) {
   const el = document.getElementById(id);
@@ -33,7 +32,7 @@ export default function StatisticalAnalysis() {
         <div className="badge">Analysis</div>
         <h1 className="h1">Problem Analysis</h1>
         <p className="lead">
-          This section summarizes the statistical analysis approach and provides access to the Power BI visualization.
+          A structured walkthrough of the problem, the evidence, and how we translate analysis into an actionable plan.
         </p>
       </div>
 
@@ -100,6 +99,7 @@ export default function StatisticalAnalysis() {
             ['sec-1-5', '5. Visual analytics (Power BI)'],
             ['sec-1-6', '6. Key takeaways'],
             ['sec-1-7', '7. Next steps'],
+            ['sec-1-8', '8. Our scalable solution'],
           ].map(([id, label]) => (
             <a
               key={id}
@@ -131,9 +131,7 @@ export default function StatisticalAnalysis() {
           </p>
 
           <h2 id="sec-1-3">3. Resource distribution gap</h2>
-          <p>
-            We then examined service availability. Nova Scotia has two major harm reduction resource types:
-          </p>
+          <p>We then examined service availability. Nova Scotia has two major harm reduction resource types:</p>
           <ul>
             <li>
               <b>ORP clinics</b> (overdose prevention / recovery): 22 clinics province-wide.
@@ -157,14 +155,41 @@ export default function StatisticalAnalysis() {
             <br />
             <b>Service Score:</b> weighted count of harm reduction services per zone (needle exchange counts double).
           </div>
-          <p>
-            Higher score → bigger gap → higher priority for intervention.
-          </p>
+          <p>Higher score → bigger gap → higher priority for intervention.</p>
 
           <h2 id="sec-1-5">5. Visual analytics (Power BI)</h2>
           <p>
             We built a dashboard to communicate burden trends and resource gaps clearly to non-technical decision makers.
           </p>
+          <div className="btnrow" style={{ marginTop: 10 }}>
+            <a
+              className="btn primary"
+              href="https://drive.google.com/file/d/1VRzSDVXOIiZ3vspHOUelozqjouljfSuf/view?usp=drive_link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open Power BI Visualization
+            </a>
+            <a
+              className="btn"
+              href="https://drive.google.com/uc?export=download&id=1VRzSDVXOIiZ3vspHOUelozqjouljfSuf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download PBIX
+            </a>
+          </div>
+
+          <div className="grid two" style={{ marginTop: 12 }}>
+            <div>
+              <img className="figure" src={problemMap} alt="Problem map figure" />
+              <div className="figcap">Map figure (problem + geographic pattern).</div>
+            </div>
+            <div>
+              <img className="figure" src={powerbiDashboard} alt="Power BI dashboard preview" />
+              <div className="figcap">Power BI dashboard preview (screenshot).</div>
+            </div>
+          </div>
 
           <h2 id="sec-1-6">6. Key takeaways</h2>
           <ul>
@@ -181,63 +206,15 @@ export default function StatisticalAnalysis() {
 
           <h2 id="sec-1-7">7. Next steps</h2>
           <ul>
-            <li>
-              Phase 1: deploy/route a mobile needle exchange + testing unit in Northern and Eastern zones.
-            </li>
-            <li>
-              Phase 2: track utilization (needles, tests, patients reached) to optimize routing.
-            </li>
-            <li>
-              Phase 3: invest in additional mobile units backed by updated data.
-            </li>
+            <li>Use updated data to refine gap scoring and deployment planning.</li>
+            <li>Partner with local stakeholders to validate operational feasibility and community needs.</li>
+            <li>Embed measurement early so decisions can be adjusted over time.</li>
           </ul>
 
-          <div className="divider" />
-
-          <h2>Power BI Visualization</h2>
-          <p className="lead" style={{ fontSize: 15 }}>
-            The dashboard visualizes burden over time and highlights where the gap between risk and resources is most
-            severe—so public health teams can prioritize outreach and harm-reduction services.
-          </p>
-          <div className="btnrow">
-            <a
-              className="btn primary"
-              href="https://drive.google.com/file/d/1VRzSDVXOIiZ3vspHOUelozqjouljfSuf/view?usp=drive_link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open Power BI Visualization
-            </a>
-            <a
-              className="btn"
-              href="https://drive.google.com/uc?export=download&id=1VRzSDVXOIiZ3vspHOUelozqjouljfSuf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Download PBIX (Google Drive)
-            </a>
-          </div>
-
-          <div className="divider" />
-
-          <h2>Problem & Analysis (Figures)</h2>
-          <div className="grid two" style={{ marginTop: 12 }}>
-            <div>
-              <img className="figure" src={problemMap} alt="Problem map figure" />
-              <div className="figcap">Map figure (problem + geographic pattern).</div>
-            </div>
-            <div>
-              <img className="figure" src={powerbiDashboard} alt="Power BI dashboard preview" />
-              <div className="figcap">Power BI dashboard preview (screenshot).</div>
-            </div>
-          </div>
-
-          <div className="divider" />
-
-          <h2>Our Scalable Solution</h2>
+          <h2 id="sec-1-8">8. Our scalable solution</h2>
           <p className="lead" style={{ fontSize: 15 }}>
             We propose a scalable expansion plan that increases coverage in underrepresented target areas while using
-            real-world utilization data to guide routing and capacity decisions.
+            utilization data to guide routing and capacity decisions.
           </p>
 
           <div className="grid two" style={{ marginTop: 12 }}>
