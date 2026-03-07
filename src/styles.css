@@ -44,5 +44,12 @@ a{color:inherit}
 .article h2{margin-top:26px}
 .article h3{margin-top:18px}
 .article p, .article li{color:var(--muted);line-height:1.6}
+.article ul{padding-left:18px}
+.divider{height:1px;background:rgba(255,255,255,.10);margin:14px 0}
+.callout{border-left:3px solid rgba(124,58,237,.9);padding:10px 12px;background:rgba(255,255,255,.04);border-radius:12px}
+.callout b{color:var(--text)}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);color:var(--muted);font-size:12px;background:rgba(255,255,255,.04)}
+.pill .dot{width:8px;height:8px;border-radius:999px;background:rgba(34,197,94,.9)}
 .footer{border-top:1px solid var(--border);color:var(--muted);padding:20px 0;margin-top:30px}
 .badge{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;border:1px solid var(--border);color:var(--muted);font-size:12px}
