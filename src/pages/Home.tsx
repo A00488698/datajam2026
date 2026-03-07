@@ -31,24 +31,38 @@ export default function Home() {
         </div>
 
         <div className="card">
-          <h2>Downloads</h2>
+          <h2>Datasets Used</h2>
+          <p className="lead" style={{ fontSize: 15 }}>
+            Our project uses two datasets: Hepatitis C surveillance time-series data for forecasting, and clinic location
+            data for mapping/access insights.
+          </p>
+
+          <div className="divider" />
+
+          <h2>Download Data</h2>
           <div className="kv">
-            <b>Demo</b>
-            <a href="/notebooks/workshop_demo.ipynb" download>
-              workshop_demo.ipynb
+            <b>hepc_clean.csv</b>
+            <span>Historical surveillance (Zone / Year / HepC_Cases / HepC_Rate)</span>
+            <b>Download</b>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1yocVmZa5w5jyQFKd24CGpOiY_UGPkRJ4"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download hepc_clean.csv
             </a>
-            <b>Practice</b>
-            <a href="/notebooks/workshop_practice.ipynb" download>
-              workshop_practice.ipynb
-            </a>
-            <b>Dataset</b>
-            <a href="/Penguindata.csv" download>
-              Penguindata.csv
+
+            <b>Clinic_Locations_geocoded.csv</b>
+            <span>Geocoded clinic locations (for spatial analysis / dashboards)</span>
+            <b>Download</b>
+            <a
+              href="https://drive.google.com/uc?export=download&id=14kRTjxwoYwOn9oyINSf4sPjyCa9HqgMr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download Clinic_Locations_geocoded.csv
             </a>
           </div>
-          <p className="lead" style={{ fontSize: 14, marginTop: 12 }}>
-            注：这些文件目前是占位文件（用于实现“点击下载”同款功能）。你给我真实文件后我再替换。
-          </p>
         </div>
       </div>
 
