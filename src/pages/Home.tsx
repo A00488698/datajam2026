@@ -13,11 +13,24 @@ export default function Home() {
 
       <div className="grid">
         <div className="card">
-          <h2>What we will learn</h2>
+          <h2>Solution Overview</h2>
           <p className="lead" style={{ fontSize: 16 }}>
-            Introduction to statistical analysis and traditional machine learning techniques to apply to hackathon
-            challenges, with a focus on practical, interpretable methods for small-to-medium datasets.
+            A resource optimization dashboard that overlays disease burden and fatality risk against existing clinic / harm
+            reduction coverage—so decision makers can prioritize the highest-impact communities.
           </p>
+
+          <div className="divider" />
+
+          <h2>Workflow</h2>
+          <ol>
+            <li>Clean and align time-series by zone</li>
+            <li>Forecast Hep C burden (cases + rate)</li>
+            <li>Overlay burden with service locations</li>
+            <li>Compute gap scores to rank unmet need</li>
+            <li>Deliver an interactive dashboard</li>
+          </ol>
+
+          <div className="divider" />
 
           <div className="btnrow">
             <Link className="btn primary" to="/statistical-analysis">
