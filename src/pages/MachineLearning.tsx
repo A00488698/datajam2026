@@ -174,8 +174,8 @@ export default function MachineLearning() {
             Links are intentionally left blank for now—send me the URLs later and I’ll wire them in.
           </p>
           <div className="btnrow">
-            <a className="btn" href="#" onClick={(e) => e.preventDefault()}>
-              Open Colab Notebook (TBD)
+            <a className="btn" href="https://colab.research.google.com/drive/1hCahzPL4My5bOGSyG8bZ3hhhsBmHHqwR?usp=sharing" target="_blank" rel="noreferrer">
+              Open Colab Notebook
             </a>
             <a className="btn" href="#" onClick={(e) => e.preventDefault()}>
               View Forecasting Notebook (TBD)
@@ -187,8 +187,13 @@ export default function MachineLearning() {
             Once you provide the file, we’ll replace this placeholder button with a direct download.
           </p>
           <div className="btnrow">
-            <a className="btn primary" href="#" onClick={(e) => e.preventDefault()}>
-              Download Forecast Results CSV (TBD)
+            <a
+              className="btn primary"
+              href="https://drive.google.com/uc?export=download&id=1bQham1KIlc_HAunzAvvouq8SCKPyI3G7"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download Forecast Results CSV
             </a>
           </div>
         </div>
