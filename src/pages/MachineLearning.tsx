@@ -76,20 +76,48 @@ export default function MachineLearning() {
 
           <div className="divider" />
 
-          <h2>Input Files</h2>
+          <h2>Datasets</h2>
           <p className="lead" style={{ fontSize: 14 }}>
-            The forecasting model uses historical surveillance data from <b>hepc_clean.csv</b>.
+            Downloads for the core files used in the workflow.
           </p>
-          <div className="kv">
-            <b>Dataset</b>
-            <span>hepc_clean.csv (historical surveillance)</span>
-            <b>Main vars</b>
-            <span>Zone, Year, HepC_Cases, HepC_Rate</span>
+
+          <div className="divider" />
+
+          <div className="card dataset-card" style={{ padding: 14, marginBottom: 12 }}>
+            <div className="dataset-title">
+              <code>hepc_clean.csv</code>
+              <span className="badge">Forecasting</span>
+            </div>
+            <p className="dataset-meta">Historical surveillance time-series (Zone / Year / HepC_Cases / HepC_Rate)</p>
+            <div className="btnrow">
+              <a
+                className="btn primary"
+                href="https://drive.google.com/uc?export=download&id=1yocVmZa5w5jyQFKd24CGpOiY_UGPkRJ4"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+            </div>
           </div>
 
-          <p className="lead" style={{ fontSize: 13, marginTop: 12 }}>
-            (Links will be added later.)
-          </p>
+          <div className="card dataset-card" style={{ padding: 14 }}>
+            <div className="dataset-title">
+              <code>Clinic_Locations_geocoded.csv</code>
+              <span className="badge">Mapping</span>
+            </div>
+            <p className="dataset-meta">Geocoded clinic locations (spatial analysis / dashboards)</p>
+            <div className="btnrow">
+              <a
+                className="btn"
+                href="https://drive.google.com/uc?export=download&id=14kRTjxwoYwOn9oyINSf4sPjyCa9HqgMr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="card toc">
