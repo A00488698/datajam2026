@@ -34,10 +34,10 @@ export default function Home() {
 
         <div className="btnrow">
           <Link className="btn primary" to="/statistical-analysis">
-            Open Statistical Analysis
+            Open Problem Analysis
           </Link>
           <Link className="btn" to="/machine-learning">
-            Open Machine Learning
+            Open Forecasting Model
           </Link>
         </div>
       </div>
