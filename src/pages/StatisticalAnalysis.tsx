@@ -98,7 +98,7 @@ export default function StatisticalAnalysis() {
             ['sec-1-4', '4. Gap score concept (need vs services)'],
             ['sec-1-5', '5. Visual analytics (Power BI)'],
             ['sec-1-6', '6. Key takeaways'],
-            ['sec-1-7', '7. Next steps'],
+            ['sec-1-7', '7. Implementation & evaluation plan'],
             ['sec-1-8', '8. Our scalable solution'],
           ].map(([id, label]) => (
             <a
@@ -160,6 +160,7 @@ export default function StatisticalAnalysis() {
           <h2 id="sec-1-5">5. Visual analytics (Power BI)</h2>
           <p>
             We built a dashboard to communicate burden trends and resource gaps clearly to non-technical decision makers.
+            The figures below show (left) the geographic pattern and (right) a dashboard view used for planning.
           </p>
           <div className="btnrow" style={{ marginTop: 10 }}>
             <a
@@ -204,11 +205,28 @@ export default function StatisticalAnalysis() {
             </li>
           </ul>
 
-          <h2 id="sec-1-7">7. Next steps</h2>
+          <h2 id="sec-1-7">7. Implementation &amp; evaluation plan</h2>
+          <p>
+            To make the dashboard actionable, deployment decisions should be paired with a clear implementation and
+            measurement plan.
+          </p>
           <ul>
-            <li>Use updated data to refine gap scoring and deployment planning.</li>
-            <li>Partner with local stakeholders to validate operational feasibility and community needs.</li>
-            <li>Embed measurement early so decisions can be adjusted over time.</li>
+            <li>
+              <b>Operational validation:</b> partner with local stakeholders to confirm feasibility (routes, staffing,
+              community needs, and capacity constraints).
+            </li>
+            <li>
+              <b>Measurement from launch:</b> track utilization metrics monthly (needles provided, tests administered,
+              patients reached) and use them to refine routing.
+            </li>
+            <li>
+              <b>Evaluation design:</b> embed an interrupted time series approach with a concurrent comparison zone where
+              possible, enabling mid-course correction and evidence generation.
+            </li>
+            <li>
+              <b>Dashboard governance:</b> update inputs regularly so the gap score remains current and decisions remain
+              defensible.
+            </li>
           </ul>
 
           <h2 id="sec-1-8">8. Our scalable solution</h2>
