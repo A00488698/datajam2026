@@ -46,11 +46,21 @@ export default function StatisticalAnalysis() {
             >
               Open Power BI Visualization
             </a>
-            <a className="btn" href="/notebooks/workshop_demo.ipynb" target="_blank" rel="noreferrer">
-              Demo Notebook
+            <a
+              className="btn"
+              href="https://drive.google.com/file/d/1gCYxD04UsK1r5mzNGze4edATEEUSKTip/view?usp=drive_link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              DataClean.ipynb
             </a>
-            <a className="btn" href="/notebooks/workshop_practice.ipynb" target="_blank" rel="noreferrer">
-              Practice Notebook
+            <a
+              className="btn"
+              href="https://drive.google.com/file/d/1rqfIAJ4jPvaE7id3jt4M6WE8t8NlEYNI/view?usp=drive_link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Mapping.ipynb
             </a>
           </div>
 
