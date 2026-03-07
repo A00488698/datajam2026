@@ -1,4 +1,35 @@
+import { useEffect } from 'react';
+
+function scrollToId(id: string) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  // Offset for sticky header
+  const y = el.getBoundingClientRect().top + window.scrollY - 90;
+  window.scrollTo({ top: y, behavior: 'smooth' });
+}
+
+function setAnchor(id: string) {
+  // HashRouter uses window.location.hash like "#/machine-learning".
+  // We append a second # for in-page anchor: "#/machine-learning#objective".
+  const base = '#/machine-learning';
+  window.location.hash = `${base}#${id}`;
+}
+
 export default function MachineLearning() {
+  // On load / refresh, support URLs like: #/machine-learning#objective
+  useEffect(() => {
+    const h = window.location.hash || '';
+    const base = '#/machine-learning';
+    if (!h.startsWith(base)) return;
+    const rest = h.slice(base.length);
+    if (!rest.startsWith('#')) return;
+    const id = rest.slice(1);
+    if (!id) return;
+
+    // Let layout paint first
+    setTimeout(() => scrollToId(id), 0);
+  }, []);
+
   return (
     <div className="container">
       <div className="hero">
@@ -63,15 +94,96 @@ export default function MachineLearning() {
 
         <div className="card toc">
           <h2>On This Page</h2>
-          <a href="#objective">Project Objective</a>
-          <a href="#why-ml">Why Machine Learning Fits</a>
-          <a href="#targets">Prediction Targets</a>
-          <a href="#features">Input Data &amp; Features</a>
-          <a href="#design">Forecasting Model Design</a>
-          <a href="#output">Output Structure</a>
-          <a href="#planning">How Results Support Intervention Planning</a>
-          <a href="#links">Notebook &amp; Code Links</a>
-          <a href="#download">Download Forecast Dataset</a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setAnchor('objective');
+              scrollToId('objective');
+            }}
+          >
+            Project Objective
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setAnchor('why-ml');
+              scrollToId('why-ml');
+            }}
+          >
+            Why Machine Learning Fits
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setAnchor('targets');
+              scrollToId('targets');
+            }}
+          >
+            Prediction Targets
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setAnchor('features');
+              scrollToId('features');
+            }}
+          >
+            Input Data &amp; Features
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setAnchor('design');
+              scrollToId('design');
+            }}
+          >
+            Forecasting Model Design
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setAnchor('output');
+              scrollToId('output');
+            }}
+          >
+            Output Structure
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setAnchor('planning');
+              scrollToId('planning');
+            }}
+          >
+            How Results Support Intervention Planning
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setAnchor('links');
+              scrollToId('links');
+            }}
+          >
+            Notebook &amp; Code
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setAnchor('download');
+              scrollToId('download');
+            }}
+          >
+            Download Forecast Dataset
+          </a>
         </div>
       </div>
 
