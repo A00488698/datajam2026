@@ -80,13 +80,13 @@ export default function StatisticalAnalysis() {
         <div className="card toc">
           <h2>On This Page</h2>
           {[
-            ['sec-1-1', '1. Descriptive statistics'],
-            ['sec-1-2', '2. Correlation vs. causation'],
-            ['sec-1-3', '3. Hypothesis testing basics'],
-            ['sec-1-4', '4. Choosing the right test'],
-            ['sec-1-5', '5. p-values & confidence intervals'],
-            ['sec-1-6', '6. Identifying meaningful patterns'],
-            ['sec-1-7', '7. Hands-On Statistics Practice'],
+            ['sec-1-1', '1. Problem discovery (data audit)'],
+            ['sec-1-2', '2. Burden disparity by zone'],
+            ['sec-1-3', '3. Resource distribution gap'],
+            ['sec-1-4', '4. Gap score concept (need vs services)'],
+            ['sec-1-5', '5. Visual analytics (Power BI)'],
+            ['sec-1-6', '6. Key takeaways'],
+            ['sec-1-7', '7. Next steps'],
           ].map(([id, label]) => (
             <a
               key={id}
@@ -105,52 +105,83 @@ export default function StatisticalAnalysis() {
 
       <div className="section">
         <div className="card article">
-          <h2 id="sec-1-1">1. Descriptive statistics (mean, median, variance, distributions)</h2>
+          <h2 id="sec-1-1">1. Problem discovery (data audit)</h2>
           <p>
-            We start by summarizing what is typical, how spread out values are, and whether the distribution suggests
-            outliers or data quality issues.
+            We started by exploring notifiable disease trends by zone. A persistent, multi-year disparity stood out: Hep C
+            burden in Eastern and Northern Nova Scotia has remained far higher than the rest of the province.
           </p>
 
-          <h2 id="sec-1-2">2. Correlation vs. causation</h2>
+          <h2 id="sec-1-2">2. Burden disparity by zone</h2>
           <p>
-            Correlation highlights association, but does not prove causation. We use this step to generate hypotheses and
-            guide deeper analysis.
+            Eastern and Northern zones show Hepatitis C rates roughly <b>2–3× higher</b> than other zones over 2014–2023.
+            Eastern also has the highest substance-related fatality burden over the last 15 years.
           </p>
 
-          <h2 id="sec-1-3">3. Hypothesis testing basics</h2>
+          <h2 id="sec-1-3">3. Resource distribution gap</h2>
           <p>
-            We apply hypothesis testing to separate signal from noise and avoid over-interpreting random variation.
+            We then examined service availability. Nova Scotia has two major harm reduction resource types:
+          </p>
+          <ul>
+            <li>
+              <b>ORP clinics</b> (overdose prevention / recovery): 22 clinics province-wide.
+            </li>
+            <li>
+              <b>Needle exchange</b> (directly prevents Hep C transmission): only 4 clinics province-wide.
+            </li>
+          </ul>
+          <p>
+            Needle exchange coverage is concentrated in Central; Northern and Eastern each rely on a single clinic that is
+            easily overwhelmed.
           </p>
 
-          <h2 id="sec-1-4">4. Choosing the right test (t-test, chi-square, ANOVA)</h2>
+          <h2 id="sec-1-4">4. Gap score concept (need vs services)</h2>
           <p>
-            The test selection depends on the data type (numeric vs categorical) and the number of groups being
-            compared.
+            Disease burden alone is not enough. A zone could have high rates but also strong coverage. What matters is the
+            <b> gap between need and resources</b>.
+          </p>
+          <div className="callout">
+            <b>Gap Score:</b> (0.5 × Normalized HepC Rate) + (0.5 × Normalized Fatality Rate) − Normalized Service Score
+            <br />
+            <b>Service Score:</b> weighted count of harm reduction services per zone (needle exchange counts double).
+          </div>
+          <p>
+            Higher score → bigger gap → higher priority for intervention.
           </p>
 
-          <h2 id="sec-1-5">5. p-values &amp; confidence intervals</h2>
+          <h2 id="sec-1-5">5. Visual analytics (Power BI)</h2>
           <p>
-            P-values measure how surprising results are under the null hypothesis; confidence intervals provide effect
-            size and uncertainty.
+            We built a dashboard to communicate burden trends and resource gaps clearly to non-technical decision makers.
           </p>
 
-          <h2 id="sec-1-6">6. Identifying meaningful patterns</h2>
-          <p>
-            We focus on effect size, practical meaning, and consistency over time/zones—beyond just statistical
-            significance.
-          </p>
+          <h2 id="sec-1-6">6. Key takeaways</h2>
+          <ul>
+            <li>Central is relatively well-served (gap score tends negative).</li>
+            <li>Northern and Eastern are underserved (gap score positive).</li>
+            <li>
+              A mobile harm reduction unit already operates in Central; the data indicates it should expand to Northern and
+              Eastern next.
+            </li>
+          </ul>
 
-          <h2 id="sec-1-7">7. Hands-On Statistics Practice</h2>
-          <p>
-            The analysis outputs feed into the dashboard story: burden trends, zone comparisons, and resource gaps.
-          </p>
+          <h2 id="sec-1-7">7. Next steps</h2>
+          <ul>
+            <li>
+              Phase 1: deploy/route a mobile needle exchange + testing unit in Northern and Eastern zones.
+            </li>
+            <li>
+              Phase 2: track utilization (needles, tests, patients reached) to optimize routing.
+            </li>
+            <li>
+              Phase 3: invest in additional mobile units backed by updated data.
+            </li>
+          </ul>
 
           <div className="divider" />
 
           <h2>Power BI Visualization</h2>
           <p className="lead" style={{ fontSize: 15 }}>
-            The dashboard visualizes burden over time and helps communicate where the gap between risk and resources is
-            most severe.
+            The dashboard visualizes burden over time and highlights where the gap between risk and resources is most
+            severe—so public health teams can prioritize outreach and harm-reduction services.
           </p>
           <div className="btnrow">
             <a

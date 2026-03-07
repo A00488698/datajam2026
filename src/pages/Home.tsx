@@ -5,28 +5,29 @@ export default function Home() {
     <div className="container">
       <div className="hero">
         <div className="badge">DataJam 2026</div>
-        <h1 className="h1">Predicting Avoidable Emergency Department Use in Nova Scotia</h1>
+        <h1 className="h1">Hep C / Substance Use Resource Optimization Dashboard</h1>
         <p className="lead">
-          Hep C / Substance Use Option: Resource Optimization Dashboard.
+          A data-driven planning tool to identify where harm reduction services are most urgently needed across Nova
+          Scotia.
         </p>
       </div>
 
       <div className="card">
         <h2>Solution Overview</h2>
         <p className="lead" style={{ fontSize: 16 }}>
-          A resource optimization dashboard that overlays disease burden and fatality risk against existing clinic / harm
-          reduction coverage—so decision makers can prioritize the highest-impact communities.
+          We overlay Hep C burden and substance-related fatality risk against existing harm reduction coverage, then use a
+          gap score to rank which zones are most underserved relative to need.
         </p>
 
         <div className="divider" />
 
         <h3>Workflow</h3>
         <ol>
-          <li>Clean and align time-series by zone</li>
-          <li>Forecast Hep C burden (cases + rate)</li>
-          <li>Overlay burden with service locations</li>
-          <li>Compute gap scores to rank unmet need</li>
-          <li>Deliver an interactive dashboard</li>
+          <li>Identify persistent burden hotspots by zone (Hep C + fatalities)</li>
+          <li>Map what services exist (ORP clinics + needle exchange + mobile units)</li>
+          <li>Compute a gap score: need minus service availability</li>
+          <li>Prioritize where to expand services next (e.g., mobile harm reduction van routes)</li>
+          <li>Deliver an interactive dashboard for planning and accountability</li>
         </ol>
 
         <div className="divider" />
@@ -45,8 +46,8 @@ export default function Home() {
         <div className="card">
           <h2>Datasets</h2>
           <p className="lead" style={{ fontSize: 15 }}>
-            Two core datasets power the analysis: surveillance trends for forecasting, and geocoded clinic locations to
-            measure coverage.
+            Our analysis combines (1) Hep C surveillance trends by zone, (2) substance-related fatality trends by zone,
+            and (3) harm reduction service locations. Downloads below include the core files we used in the workflow.
           </p>
 
           <div className="grid two" style={{ marginTop: 12 }}>
@@ -94,7 +95,7 @@ export default function Home() {
           <h2>Project Summary</h2>
           <div className="grid" style={{ gridTemplateColumns: '1fr 1fr' }}>
             <div>
-              <h3>The Problem (data-driven)</h3>
+              <h3>The Problem</h3>
               <ul>
                 <li>
                   Eastern and Northern Nova Scotia have had Hepatitis C rates <b>2–3× higher</b> than the rest of the
@@ -104,25 +105,21 @@ export default function Home() {
                   Eastern zone has also had the highest substance-related fatality rates every year from 2009–2024—nearly
                   <b> double Western zone</b> over that 15-year period.
                 </li>
-                <li>
-                  This is not a recent crisis. It is a chronic systemic failure that has never been adequately addressed.
-                </li>
+                <li>This is not a recent crisis—it’s a chronic, sustained failure the data has flagged for 15 years.</li>
               </ul>
             </div>
 
             <div>
-              <h3>What We're Building</h3>
+              <h3>Resources & Structural Gap</h3>
               <ul>
                 <li>
-                  A resource optimization dashboard overlaying disease burden + fatality rates against existing harm
-                  reduction service locations.
+                  ORP (opioid recovery / overdose prevention): <b>22 clinics</b> in Nova Scotia.
                 </li>
                 <li>
-                  A gap scoring model that weights burden vs service availability to rank communities by unmet need.
+                  Needle exchange (directly prevents Hep C transmission): only <b>4 clinics</b> province-wide.
                 </li>
                 <li>
-                  An interactive dashboard to show where the system is failing and where intervention would have the
-                  highest impact.
+                  Two needle exchange clinics are in Central; Northern has one (Truro); Eastern has one (Cape Breton).
                 </li>
               </ul>
             </div>
@@ -130,11 +127,16 @@ export default function Home() {
 
           <div className="divider" />
 
-          <h3>The Story We're Telling</h3>
+          <h3>Our Solution</h3>
           <p className="lead" style={{ fontSize: 15 }}>
-            Here's where people are dying. Here's where the services are. Here's the gap. Here's where we'd intervene
-            first if we were making the decision.
+            Expand a mobile harm reduction unit (like MOSH in Halifax) beyond Central and deploy next in Northern and
+            Eastern—guided by a gap score that quantifies unmet need.
           </p>
+
+          <div className="callout" style={{ marginTop: 12 }}>
+            <b>Story:</b> Here’s where people are dying. Here’s where the services are. Here’s the gap. Here’s where we’d
+            intervene first.
+          </div>
         </div>
       </div>
 

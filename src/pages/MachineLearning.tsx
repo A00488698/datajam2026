@@ -276,17 +276,29 @@ export default function MachineLearning() {
 
           <h2 id="planning">7. How Model Results Support Intervention Planning</h2>
           <p>
-            The forecasting results are integrated into a <b>Power BI dashboard</b>.
+            Forecasting tells us where burden is likely to remain high. We then pair those insights with service location
+            coverage to support decisions on where to deploy interventions next.
           </p>
-          <p><b>The dashboard visualizes:</b></p>
-          <ul>
-            <li>historical Hepatitis C trends</li>
-            <li>predicted future trends</li>
-            <li>comparisons across health zones</li>
-          </ul>
+          <div className="callout">
+            <b>Intervention idea:</b> expand a mobile harm reduction unit (like MOSH in Halifax) beyond Central, prioritizing
+            Northern and Eastern zones where the gap score is highest.
+          </div>
+          <p><b>Scalability roadmap:</b></p>
+          <ol>
+            <li>
+              <b>Phase 1:</b> bring mobile services to Northern and Eastern zones where resources are most needed.
+            </li>
+            <li>
+              <b>Phase 2:</b> track utilization (needles provided, tests administered, patients reached) for route planning
+              and optimization.
+            </li>
+            <li>
+              <b>Phase 3:</b> invest in additional mobile units backed by updated data and measured impact.
+            </li>
+          </ol>
           <p>
-            This allows us to highlight regions where Hepatitis C burden may remain higher in the future. Public health
-            teams can then focus outreach and harm-reduction services in those areas.
+            Evaluation can be embedded from launch using an interrupted time series design, tracking outcomes monthly via
+            a real-time dashboard.
           </p>
 
           <div className="divider" />
