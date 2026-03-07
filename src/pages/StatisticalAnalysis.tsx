@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
-import solutionFigure from '../assets/problem-analysis-figure-2.jpg';
+import problemMap from '../assets/problem-analysis-figure.jpg';
 import powerbiDashboard from '../assets/powerbi-dashboard.jpg';
+import solutionFigure from '../assets/problem-analysis-figure-2.jpg';
 
 function scrollToId(id: string) {
   const el = document.getElementById(id);
@@ -219,9 +220,17 @@ export default function StatisticalAnalysis() {
 
           <div className="divider" />
 
-          <h2>Dashboard Preview</h2>
-          <img className="figure" src={powerbiDashboard} alt="Power BI dashboard preview" />
-          <div className="figcap">Power BI dashboard preview (screenshot).</div>
+          <h2>Problem & Analysis (Figures)</h2>
+          <div className="grid two" style={{ marginTop: 12 }}>
+            <div>
+              <img className="figure" src={problemMap} alt="Problem map figure" />
+              <div className="figcap">Map figure (problem + geographic pattern).</div>
+            </div>
+            <div>
+              <img className="figure" src={powerbiDashboard} alt="Power BI dashboard preview" />
+              <div className="figcap">Power BI dashboard preview (screenshot).</div>
+            </div>
+          </div>
 
           <div className="divider" />
 
