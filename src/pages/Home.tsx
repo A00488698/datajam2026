@@ -11,77 +11,79 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="grid">
-        <div className="card">
-          <h2>Solution Overview</h2>
-          <p className="lead" style={{ fontSize: 16 }}>
-            A resource optimization dashboard that overlays disease burden and fatality risk against existing clinic / harm
-            reduction coverage—so decision makers can prioritize the highest-impact communities.
-          </p>
+      <div className="card">
+        <h2>Solution Overview</h2>
+        <p className="lead" style={{ fontSize: 16 }}>
+          A resource optimization dashboard that overlays disease burden and fatality risk against existing clinic / harm
+          reduction coverage—so decision makers can prioritize the highest-impact communities.
+        </p>
 
-          <div className="divider" />
+        <div className="divider" />
 
-          <h2>Workflow</h2>
-          <ol>
-            <li>Clean and align time-series by zone</li>
-            <li>Forecast Hep C burden (cases + rate)</li>
-            <li>Overlay burden with service locations</li>
-            <li>Compute gap scores to rank unmet need</li>
-            <li>Deliver an interactive dashboard</li>
-          </ol>
+        <h3>Workflow</h3>
+        <ol>
+          <li>Clean and align time-series by zone</li>
+          <li>Forecast Hep C burden (cases + rate)</li>
+          <li>Overlay burden with service locations</li>
+          <li>Compute gap scores to rank unmet need</li>
+          <li>Deliver an interactive dashboard</li>
+        </ol>
 
-          <div className="divider" />
+        <div className="divider" />
 
-          <div className="btnrow">
-            <Link className="btn primary" to="/statistical-analysis">
-              Open Statistical Analysis
-            </Link>
-            <Link className="btn" to="/machine-learning">
-              Open Machine Learning
-            </Link>
-          </div>
+        <div className="btnrow">
+          <Link className="btn primary" to="/statistical-analysis">
+            Open Statistical Analysis
+          </Link>
+          <Link className="btn" to="/machine-learning">
+            Open Machine Learning
+          </Link>
         </div>
+      </div>
 
+      <div className="section" style={{ paddingTop: 18 }}>
         <div className="card">
           <h2>Datasets</h2>
           <p className="lead" style={{ fontSize: 15 }}>
-            We use two core datasets: (1) Hepatitis C surveillance by zone over time, and (2) geocoded clinic locations
-            to understand resource availability.
+            Two core datasets power the analysis: surveillance trends for forecasting, and geocoded clinic locations to
+            measure coverage.
           </p>
 
-          <div className="divider" />
-
-          <div className="card" style={{ padding: 14, marginBottom: 12, background: 'rgba(255,255,255,.03)' }}>
-            <h2 style={{ marginBottom: 6 }}>hepc_clean.csv</h2>
-            <p className="lead" style={{ fontSize: 14, marginTop: 0 }}>
-              Historical surveillance time-series (Zone / Year / HepC_Cases / HepC_Rate)
-            </p>
-            <div className="btnrow">
-              <a
-                className="btn primary"
-                href="https://drive.google.com/uc?export=download&id=1yocVmZa5w5jyQFKd24CGpOiY_UGPkRJ4"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Download hepc_clean.csv
-              </a>
+          <div className="grid two" style={{ marginTop: 12 }}>
+            <div className="card dataset-card">
+              <div className="dataset-title">
+                <code>hepc_clean.csv</code>
+                <span className="badge">Forecasting</span>
+              </div>
+              <p className="dataset-meta">Historical surveillance time-series (Zone / Year / HepC_Cases / HepC_Rate)</p>
+              <div className="btnrow">
+                <a
+                  className="btn primary"
+                  href="https://drive.google.com/uc?export=download&id=1yocVmZa5w5jyQFKd24CGpOiY_UGPkRJ4"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Download
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div className="card" style={{ padding: 14, background: 'rgba(255,255,255,.03)' }}>
-            <h2 style={{ marginBottom: 6 }}>Clinic_Locations_geocoded.csv</h2>
-            <p className="lead" style={{ fontSize: 14, marginTop: 0 }}>
-              Geocoded clinic locations (spatial analysis / dashboards)
-            </p>
-            <div className="btnrow">
-              <a
-                className="btn"
-                href="https://drive.google.com/uc?export=download&id=14kRTjxwoYwOn9oyINSf4sPjyCa9HqgMr"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Download Clinic_Locations_geocoded.csv
-              </a>
+            <div className="card dataset-card">
+              <div className="dataset-title">
+                <code>Clinic_Locations_geocoded.csv</code>
+                <span className="badge">Mapping</span>
+              </div>
+              <p className="dataset-meta">Geocoded clinic locations (spatial analysis / dashboards)</p>
+              <div className="btnrow">
+                <a
+                  className="btn"
+                  href="https://drive.google.com/uc?export=download&id=14kRTjxwoYwOn9oyINSf4sPjyCa9HqgMr"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Download
+                </a>
+              </div>
             </div>
           </div>
         </div>
