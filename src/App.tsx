@@ -16,8 +16,8 @@ export default function App() {
             <NavLink to="/" end>
               Home
             </NavLink>
-            <NavLink to="/statistical-analysis">Statistical Analysis</NavLink>
-            <NavLink to="/machine-learning">Machine Learning</NavLink>
+            <NavLink to="/statistical-analysis">Problem Analysis</NavLink>
+            <NavLink to="/machine-learning">Forecasting Model</NavLink>
           </nav>
         </div>
       </header>

@@ -28,7 +28,7 @@ export default function StatisticalAnalysis() {
     <div className="container">
       <div className="hero">
         <div className="badge">Analysis</div>
-        <h1 className="h1">Statistical Analysis</h1>
+        <h1 className="h1">Problem Analysis</h1>
         <p className="lead">
           This section summarizes the statistical analysis approach and provides access to the Power BI visualization.
         </p>

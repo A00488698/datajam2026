@@ -34,7 +34,7 @@ export default function MachineLearning() {
     <div className="container">
       <div className="hero">
         <div className="badge">Modeling</div>
-        <h1 className="h1">Machine Learning</h1>
+        <h1 className="h1">Forecasting Model</h1>
         <p className="lead">
           This section explains the forecasting model used in our project to estimate future Hepatitis C burden across
           Nova Scotia health zones.
