@@ -5,7 +5,7 @@ export default function Home() {
     <div className="container">
       <div className="hero">
         <div className="badge">DataJam 2026</div>
-        <h1 className="h1">Statistical Analysis &amp; Non‑LLM Machine Learning Workshop</h1>
+        <h1 className="h1">Predicting Avoidable Emergency Department Use in Nova Scotia</h1>
         <p className="lead">
           同款 UI/布局 + 同款页面结构（Home / Statistical Analysis / Machine Learning）。
           你后续可以一点点替换文案、链接、文件与细节。
