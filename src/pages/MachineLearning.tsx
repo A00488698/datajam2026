@@ -25,10 +25,20 @@ export default function MachineLearning() {
         <div className="card">
           <h2>Quick Actions</h2>
           <div className="btnrow">
-            <a className="btn primary" href="#links">
+            <a
+              className="btn primary"
+              href="https://colab.research.google.com/drive/1hCahzPL4My5bOGSyG8bZ3hhhsBmHHqwR?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
               Notebook &amp; Code
             </a>
-            <a className="btn" href="#download">
+            <a
+              className="btn"
+              href="https://drive.google.com/uc?export=download&id=1bQham1KIlc_HAunzAvvouq8SCKPyI3G7"
+              target="_blank"
+              rel="noreferrer"
+            >
               Download Forecast CSV
             </a>
           </div>
