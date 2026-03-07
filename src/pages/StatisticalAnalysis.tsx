@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import problemFigure from '../assets/problem-analysis-figure.jpg';
+import solutionFigure from '../assets/problem-analysis-figure-2.jpg';
+import powerbiDashboard from '../assets/powerbi-dashboard.jpg';
 
 function scrollToId(id: string) {
   const el = document.getElementById(id);
@@ -218,12 +219,15 @@ export default function StatisticalAnalysis() {
 
           <div className="divider" />
 
-          <h2>Figure</h2>
-          <img className="figure" src={problemFigure} alt="Problem analysis figure" />
-          <div className="figcap">
-            Figure added from your slide. If you want a specific caption (e.g., “Gap Score framework” / “Resource
-            distribution by zone”), tell me the exact wording and I’ll match it.
-          </div>
+          <h2>Dashboard Preview</h2>
+          <img className="figure" src={powerbiDashboard} alt="Power BI dashboard preview" />
+          <div className="figcap">Power BI dashboard preview (screenshot).</div>
+
+          <div className="divider" />
+
+          <h2>Solution Overview (Slide)</h2>
+          <img className="figure" src={solutionFigure} alt="Solution overview slide" />
+          <div className="figcap">Solution overview slide (gap score + mobile unit concept).</div>
         </div>
       </div>
 
