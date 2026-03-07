@@ -102,7 +102,7 @@ export default function MachineLearning() {
               scrollToId('objective');
             }}
           >
-            Project Objective
+            1. Project Objective
           </a>
           <a
             href="#"
@@ -112,7 +112,7 @@ export default function MachineLearning() {
               scrollToId('why-ml');
             }}
           >
-            Why Machine Learning Fits
+            2. Why Machine Learning Fits
           </a>
           <a
             href="#"
@@ -122,7 +122,7 @@ export default function MachineLearning() {
               scrollToId('targets');
             }}
           >
-            Prediction Targets
+            3. Prediction Targets
           </a>
           <a
             href="#"
@@ -132,7 +132,7 @@ export default function MachineLearning() {
               scrollToId('features');
             }}
           >
-            Input Data &amp; Features
+            4. Input Data &amp; Features
           </a>
           <a
             href="#"
@@ -142,7 +142,7 @@ export default function MachineLearning() {
               scrollToId('design');
             }}
           >
-            Forecasting Model Design
+            5. Forecasting Model Design
           </a>
           <a
             href="#"
@@ -152,7 +152,7 @@ export default function MachineLearning() {
               scrollToId('output');
             }}
           >
-            Output Structure
+            6. Output Structure
           </a>
           <a
             href="#"
@@ -162,7 +162,7 @@ export default function MachineLearning() {
               scrollToId('planning');
             }}
           >
-            How Results Support Intervention Planning
+            7. How Results Support Intervention Planning
           </a>
           <a
             href="#"
@@ -172,7 +172,7 @@ export default function MachineLearning() {
               scrollToId('links');
             }}
           >
-            Notebook &amp; Code
+            8. Notebook &amp; Code
           </a>
           <a
             href="#"
@@ -182,14 +182,14 @@ export default function MachineLearning() {
               scrollToId('download');
             }}
           >
-            Download Forecast Dataset
+            9. Download Forecast Dataset
           </a>
         </div>
       </div>
 
       <div className="section">
         <div className="card article">
-          <h2 id="objective">Project Objective</h2>
+          <h2 id="objective">1. Project Objective</h2>
           <p>
             The goal of the machine learning component is to identify which regions may experience higher Hepatitis C
             burden in the coming years.
@@ -204,13 +204,13 @@ export default function MachineLearning() {
             programs should be prioritized.
           </div>
 
-          <h2 id="why-ml">Why Machine Learning Fits This Project</h2>
+          <h2 id="why-ml">2. Why Machine Learning Fits This Project</h2>
           <p>
             Historical data alone shows where Hepatitis C was severe in the past. Forecasting enables a proactive approach
             by estimating where the situation may become more serious in the future.
           </p>
 
-          <h2 id="targets">Prediction Target</h2>
+          <h2 id="targets">3. Prediction Targets</h2>
           <p>Two forecasting targets are used:</p>
           <ul>
             <li>
@@ -224,7 +224,7 @@ export default function MachineLearning() {
             Cases help estimate service demand, while rates help compare relative risk across regions.
           </p>
 
-          <h2 id="features">Input Data and Features</h2>
+          <h2 id="features">4. Input Data &amp; Features</h2>
           <p>The forecasting model uses historical surveillance data from: <b>hepc_clean.csv</b>.</p>
           <ul>
             <li>
@@ -242,7 +242,7 @@ export default function MachineLearning() {
           </ul>
           <p>These historical trends are used to train the time-series model.</p>
 
-          <h2 id="design">Forecasting Model Design</h2>
+          <h2 id="design">5. Forecasting Model Design</h2>
           <p>
             We use <b>Prophet</b>, a time-series forecasting model designed for structured temporal data.
           </p>
@@ -258,7 +258,7 @@ export default function MachineLearning() {
             This allows us to compare past trends with predicted future patterns.
           </p>
 
-          <h2 id="output">Output Structure</h2>
+          <h2 id="output">6. Output Structure</h2>
           <p>
             The final output dataset contains both historical data and forecasted values.
           </p>
@@ -274,7 +274,7 @@ export default function MachineLearning() {
             Predicted case numbers are rounded to integers, and predicted rates are kept to one decimal place.
           </p>
 
-          <h2 id="planning">How Model Results Support Intervention Planning</h2>
+          <h2 id="planning">7. How Model Results Support Intervention Planning</h2>
           <p>
             The forecasting results are integrated into a <b>Power BI dashboard</b>.
           </p>
@@ -291,7 +291,7 @@ export default function MachineLearning() {
 
           <div className="divider" />
 
-          <h2 id="links">Notebook and Code</h2>
+          <h2 id="links">8. Notebook and Code</h2>
           <p className="lead" style={{ fontSize: 15 }}>
             All modeling code and analysis are documented in the Colab notebook.
           </p>
@@ -306,7 +306,7 @@ export default function MachineLearning() {
             </a>
           </div>
 
-          <h2 id="download">Download Forecast Dataset</h2>
+          <h2 id="download">9. Download Forecast Dataset</h2>
           <p className="lead" style={{ fontSize: 15 }}>
             Once you provide the file, we’ll replace this placeholder button with a direct download.
           </p>
