@@ -182,11 +182,11 @@ export default function StatisticalAnalysis() {
 
           <div className="grid two" style={{ marginTop: 12 }}>
             <div>
-              <img className="figure" src={problemMap} alt="Problem map figure" />
+              <img className="figure-fixed" src={problemMap} alt="Problem map figure" />
               <div className="figcap">Map figure (problem + geographic pattern).</div>
             </div>
             <div>
-              <img className="figure" src={powerbiDashboard} alt="Power BI dashboard preview" />
+              <img className="figure-fixed" src={powerbiDashboard} alt="Power BI dashboard preview" />
               <div className="figcap">Power BI dashboard preview (screenshot).</div>
             </div>
           </div>

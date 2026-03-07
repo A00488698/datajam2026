@@ -60,6 +60,8 @@ a{color:inherit}
 .dataset-meta{color:var(--muted);font-size:14px;line-height:1.6;margin:0}
 
 .figure{width:100%;height:auto;display:block;border-radius:14px;border:1px solid var(--border);background:rgba(0,0,0,.2)}
+.figure-fixed{width:100%;height:320px;object-fit:cover;display:block;border-radius:14px;border:1px solid var(--border);background:rgba(0,0,0,.2)}
+@media (max-width: 900px){.figure-fixed{height:auto;object-fit:contain}}
 .figcap{color:var(--muted);font-size:13px;line-height:1.5;margin-top:10px}
 
 .footer{border-top:1px solid var(--border);color:var(--muted);padding:20px 0;margin-top:30px}
