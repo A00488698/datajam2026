@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import problemMap from '../assets/problem-analysis-figure.jpg';
 import powerbiDashboard from '../assets/problem-analysis-figure-2.jpg';
-import solutionFigure from '../assets/powerbi-dashboard.jpg';
+// (solution slide removed)
 
 function scrollToId(id: string) {
   const el = document.getElementById(id);
@@ -234,9 +234,35 @@ export default function StatisticalAnalysis() {
 
           <div className="divider" />
 
-          <h2>Solution Overview (Slide)</h2>
-          <img className="figure" src={solutionFigure} alt="Solution overview slide" />
-          <div className="figcap">Solution overview slide (gap score + mobile unit concept).</div>
+          <h2>Our Scalable Solution</h2>
+          <p className="lead" style={{ fontSize: 15 }}>
+            We propose a scalable expansion plan that increases coverage in underrepresented target areas while using
+            real-world utilization data to guide routing and capacity decisions.
+          </p>
+
+          <div className="grid two" style={{ marginTop: 12 }}>
+            <div className="card dataset-card" style={{ padding: 14 }}>
+              <h3 style={{ marginTop: 0 }}>Phase 1</h3>
+              <p className="dataset-meta">
+                <b>Rerouting and expanding capacity</b> of the current trucks in use.
+              </p>
+            </div>
+            <div className="card dataset-card" style={{ padding: 14 }}>
+              <h3 style={{ marginTop: 0 }}>Phase 2</h3>
+              <p className="dataset-meta">
+                <b>Data tracking</b> to measure progress and usage of current trucks (needles provided, tests administered,
+                patients reached).
+              </p>
+            </div>
+          </div>
+
+          <div className="card dataset-card" style={{ padding: 14, marginTop: 12 }}>
+            <h3 style={{ marginTop: 0 }}>Phase 3</h3>
+            <p className="dataset-meta">
+              <b>Invest in a new van</b> to serve underrepresented target areas—scaled based on measured impact and updated
+              data.
+            </p>
+          </div>
         </div>
       </div>
 
