@@ -179,16 +179,18 @@ export default function MachineLearning() {
 
           <div className="divider" />
 
-          <h2 id="links">Notebook and Code Links</h2>
+          <h2 id="links">Notebook and Code</h2>
           <p className="lead" style={{ fontSize: 15 }}>
-            Links are intentionally left blank for now—send me the URLs later and I’ll wire them in.
+            All modeling code and analysis are documented in the Colab notebook.
           </p>
           <div className="btnrow">
-            <a className="btn" href="https://colab.research.google.com/drive/1hCahzPL4My5bOGSyG8bZ3hhhsBmHHqwR?usp=sharing" target="_blank" rel="noreferrer">
+            <a
+              className="btn primary"
+              href="https://colab.research.google.com/drive/1hCahzPL4My5bOGSyG8bZ3hhhsBmHHqwR?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
               Open Colab Notebook
-            </a>
-            <a className="btn" href="#" onClick={(e) => e.preventDefault()}>
-              View Forecasting Notebook (TBD)
             </a>
           </div>
 
