@@ -7,8 +7,7 @@ export default function Home() {
         <div className="badge">DataJam 2026</div>
         <h1 className="h1">Predicting Avoidable Emergency Department Use in Nova Scotia</h1>
         <p className="lead">
-          同款 UI/布局 + 同款页面结构（Home / Statistical Analysis / Machine Learning）。
-          你后续可以一点点替换文案、链接、文件与细节。
+          Hep C / Substance Use Option: Resource Optimization Dashboard.
         </p>
       </div>
 
@@ -31,48 +30,96 @@ export default function Home() {
         </div>
 
         <div className="card">
-          <h2>Datasets Used</h2>
+          <h2>Datasets</h2>
           <p className="lead" style={{ fontSize: 15 }}>
-            Our project uses two datasets: Hepatitis C surveillance time-series data for forecasting, and clinic location
-            data for mapping/access insights.
+            We use two core datasets: (1) Hepatitis C surveillance by zone over time, and (2) geocoded clinic locations
+            to understand resource availability.
           </p>
 
           <div className="divider" />
 
-          <h2>Download Data</h2>
-          <div className="kv">
-            <b>hepc_clean.csv</b>
-            <span>Historical surveillance (Zone / Year / HepC_Cases / HepC_Rate)</span>
-            <b>Download</b>
-            <a
-              href="https://drive.google.com/uc?export=download&id=1yocVmZa5w5jyQFKd24CGpOiY_UGPkRJ4"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Download hepc_clean.csv
-            </a>
+          <div className="card" style={{ padding: 14, marginBottom: 12, background: 'rgba(255,255,255,.03)' }}>
+            <h2 style={{ marginBottom: 6 }}>hepc_clean.csv</h2>
+            <p className="lead" style={{ fontSize: 14, marginTop: 0 }}>
+              Historical surveillance time-series (Zone / Year / HepC_Cases / HepC_Rate)
+            </p>
+            <div className="btnrow">
+              <a
+                className="btn primary"
+                href="https://drive.google.com/uc?export=download&id=1yocVmZa5w5jyQFKd24CGpOiY_UGPkRJ4"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download hepc_clean.csv
+              </a>
+            </div>
+          </div>
 
-            <b>Clinic_Locations_geocoded.csv</b>
-            <span>Geocoded clinic locations (for spatial analysis / dashboards)</span>
-            <b>Download</b>
-            <a
-              href="https://drive.google.com/uc?export=download&id=14kRTjxwoYwOn9oyINSf4sPjyCa9HqgMr"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Download Clinic_Locations_geocoded.csv
-            </a>
+          <div className="card" style={{ padding: 14, background: 'rgba(255,255,255,.03)' }}>
+            <h2 style={{ marginBottom: 6 }}>Clinic_Locations_geocoded.csv</h2>
+            <p className="lead" style={{ fontSize: 14, marginTop: 0 }}>
+              Geocoded clinic locations (spatial analysis / dashboards)
+            </p>
+            <div className="btnrow">
+              <a
+                className="btn"
+                href="https://drive.google.com/uc?export=download&id=14kRTjxwoYwOn9oyINSf4sPjyCa9HqgMr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download Clinic_Locations_geocoded.csv
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="section">
         <div className="card">
-          <h2>Notes</h2>
-          <ul>
-            <li>GitHub Pages 支持：页面跳转、下载文件、外链跳转、锚点跳转。</li>
-            <li>GitHub Pages 不支持：需要服务器的功能（比如登录、数据库、后台表单处理）——这类要用第三方服务或单独后端。</li>
-          </ul>
+          <h2>Project Summary</h2>
+          <div className="grid" style={{ gridTemplateColumns: '1fr 1fr' }}>
+            <div>
+              <h3>The Problem (data-driven)</h3>
+              <ul>
+                <li>
+                  Eastern and Northern Nova Scotia have had Hepatitis C rates <b>2–3× higher</b> than the rest of the
+                  province consistently for over a decade (2014–2023).
+                </li>
+                <li>
+                  Eastern zone has also had the highest substance-related fatality rates every year from 2009–2024—nearly
+                  <b> double Western zone</b> over that 15-year period.
+                </li>
+                <li>
+                  This is not a recent crisis. It is a chronic systemic failure that has never been adequately addressed.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>What We're Building</h3>
+              <ul>
+                <li>
+                  A resource optimization dashboard overlaying disease burden + fatality rates against existing harm
+                  reduction service locations.
+                </li>
+                <li>
+                  A gap scoring model that weights burden vs service availability to rank communities by unmet need.
+                </li>
+                <li>
+                  An interactive dashboard to show where the system is failing and where intervention would have the
+                  highest impact.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="divider" />
+
+          <h3>The Story We're Telling</h3>
+          <p className="lead" style={{ fontSize: 15 }}>
+            Here's where people are dying. Here's where the services are. Here's the gap. Here's where we'd intervene
+            first if we were making the decision.
+          </p>
         </div>
       </div>
 
