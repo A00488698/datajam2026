@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import problemFigure from '../assets/problem-analysis-figure.jpg';
 
 function scrollToId(id: string) {
   const el = document.getElementById(id);
@@ -213,6 +214,15 @@ export default function StatisticalAnalysis() {
             >
               Download PBIX (Google Drive)
             </a>
+          </div>
+
+          <div className="divider" />
+
+          <h2>Figure</h2>
+          <img className="figure" src={problemFigure} alt="Problem analysis figure" />
+          <div className="figcap">
+            Figure added from your slide. If you want a specific caption (e.g., “Gap Score framework” / “Resource
+            distribution by zone”), tell me the exact wording and I’ll match it.
           </div>
         </div>
       </div>
