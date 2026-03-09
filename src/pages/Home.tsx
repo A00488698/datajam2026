@@ -7,27 +7,40 @@ export default function Home() {
         <div className="badge">DataJam 2026</div>
         <h1 className="h1">Hep C / Substance Use Resource Optimization Dashboard</h1>
         <p className="lead">
-          A data-driven planning tool to identify where harm reduction services are most urgently needed across Nova
-          Scotia.
+          A data-driven tool to highlight where harm-reduction services are most needed in Nova Scotia—and how to deploy
+          existing resources more effectively.
         </p>
       </div>
 
       <div className="card">
-        <h2>Solution Overview</h2>
+        <h2>Project Flow (as presented)</h2>
         <p className="lead" style={{ fontSize: 16 }}>
-          We overlay Hep C burden and substance-related fatality risk against existing harm reduction coverage, then use a
-          gap score to rank which zones are most underserved relative to need.
+          We started by looking for a meaningful public-health problem in Nova Scotia Open Data. The evidence shows a
+          persistent Hep C burden disparity by zone, paired with long-running substance-related fatalities. We then mapped
+          existing resources and built a gap score framework to guide scalable intervention planning.
         </p>
 
         <div className="divider" />
 
         <h3>Workflow</h3>
         <ol>
-          <li>Identify persistent burden hotspots by zone (Hep C + fatalities)</li>
-          <li>Map what services exist (ORP clinics + needle exchange + mobile units)</li>
-          <li>Compute a gap score: need minus service availability</li>
-          <li>Prioritize where to expand services next (e.g., mobile harm reduction van routes)</li>
-          <li>Deliver an interactive dashboard for planning and accountability</li>
+          <li>
+            Explore notifiable disease trends by zone and identify a persistent Hep C disparity (Eastern/Northern are 2–3×
+            higher for over a decade).
+          </li>
+          <li>
+            Confirm compounding risk via substance-related fatality trends (Eastern consistently highest over ~15 years).
+          </li>
+          <li>
+            Inventory resources and structural constraints (ORP clinics vs needle exchange coverage).
+          </li>
+          <li>
+            Compute a gap score: need (Hep C + fatalities) minus service availability (needle exchange weighted higher).
+          </li>
+          <li>
+            Propose a scalable solution using existing capacity: expand a mobile harm-reduction unit (e.g., MOSH) beyond
+            Halifax and optimize deployment using data.
+          </li>
         </ol>
 
         <div className="divider" />
@@ -46,17 +59,17 @@ export default function Home() {
         <div className="card">
           <h2>Datasets</h2>
           <p className="lead" style={{ fontSize: 15 }}>
-            Our analysis combines (1) Hep C surveillance trends by zone, (2) substance-related fatality trends by zone,
-            and (3) harm reduction service locations. Downloads below include the core files we used in the workflow.
+            The workflow combines disease burden trends, substance-related fatalities, and harm-reduction service
+            locations. Below are the core files used in our analysis.
           </p>
 
           <div className="grid two" style={{ marginTop: 12 }}>
             <div className="card dataset-card">
               <div className="dataset-title">
                 <code>hepc_clean.csv</code>
-                <span className="badge">Forecasting</span>
+                <span className="badge">Burden</span>
               </div>
-              <p className="dataset-meta">Historical surveillance time-series (Zone / Year / HepC_Cases / HepC_Rate)</p>
+              <p className="dataset-meta">Hep C surveillance by zone over time (Zone / Year / HepC_Cases / HepC_Rate)</p>
               <div className="btnrow">
                 <a
                   className="btn primary"
@@ -72,9 +85,9 @@ export default function Home() {
             <div className="card dataset-card">
               <div className="dataset-title">
                 <code>Clinic_Locations_geocoded.csv</code>
-                <span className="badge">Mapping</span>
+                <span className="badge">Services</span>
               </div>
-              <p className="dataset-meta">Geocoded clinic locations (spatial analysis / dashboards)</p>
+              <p className="dataset-meta">Geocoded service locations (spatial analysis / dashboard overlays)</p>
               <div className="btnrow">
                 <a
                   className="btn"
@@ -92,56 +105,16 @@ export default function Home() {
 
       <div className="section">
         <div className="card">
-          <h2>Project Summary</h2>
-          <div className="grid" style={{ gridTemplateColumns: '1fr 1fr' }}>
-            <div>
-              <h3>The Problem</h3>
-              <ul>
-                <li>
-                  Eastern and Northern Nova Scotia have had Hepatitis C rates <b>2–3× higher</b> than the rest of the
-                  province consistently for over a decade (2014–2023).
-                </li>
-                <li>
-                  Eastern zone has also had the highest substance-related fatality rates every year from 2009–2024—nearly
-                  <b> double Western zone</b> over that 15-year period.
-                </li>
-                <li>This is not a recent crisis—it’s a chronic, sustained failure the data has flagged for 15 years.</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3>Resources & Structural Gap</h3>
-              <ul>
-                <li>
-                  ORP (opioid recovery / overdose prevention): <b>22 clinics</b> in Nova Scotia.
-                </li>
-                <li>
-                  Needle exchange (directly prevents Hep C transmission): only <b>4 clinics</b> province-wide.
-                </li>
-                <li>
-                  Two needle exchange clinics are in Central; Northern has one (Truro); Eastern has one (Cape Breton).
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="divider" />
-
-          <h3>Our Solution</h3>
-          <p className="lead" style={{ fontSize: 15 }}>
-            Expand a mobile harm reduction unit (like MOSH in Halifax) beyond Central—guided by a gap score framework
-            that quantifies unmet need and supports data-driven deployment planning.
-          </p>
-
-          <div className="callout" style={{ marginTop: 12 }}>
-            <b>Story:</b> Here’s where people are dying. Here’s where the services are. Here’s the gap. Here’s where we’d
+          <h2>One-sentence story</h2>
+          <div className="callout">
+            <b>Here’s where people are dying.</b> Here’s where the services are. Here’s the gap. Here’s where we’d
             intervene first.
           </div>
         </div>
       </div>
 
       <div className="footer container">
-        <div>© DataJam 2026 — site scaffolded for you to edit.</div>
+        <div>© DataJam 2026</div>
       </div>
     </div>
   );
