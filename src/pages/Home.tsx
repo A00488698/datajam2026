@@ -105,7 +105,7 @@ export default function Home() {
 
       <div className="section">
         <div className="card">
-          <h2>One-sentence story</h2>
+          <h2>The Story We're Telling</h2>
           <div className="callout">
             <b>Here’s where people are dying.</b> Here’s where the services are. Here’s the gap. Here’s where we’d
             intervene first.

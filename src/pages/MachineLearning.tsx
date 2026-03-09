@@ -34,10 +34,10 @@ export default function MachineLearning() {
     <div className="container">
       <div className="hero">
         <div className="badge">Modeling</div>
-        <h1 className="h1">Forecasting Model</h1>
+        <h1 className="h1">Forecasting Model (Exploratory Analysis)</h1>
         <p className="lead">
-          This section explains the forecasting model used in our project to estimate future Hepatitis C burden across
-          Nova Scotia health zones.
+          In addition to the main resource gap analysis, we built a simple time-series forecasting model to explore how
+          Hepatitis C trends may evolve across Nova Scotia health zones.
         </p>
         <div className="pills">
           <div className="pill">
